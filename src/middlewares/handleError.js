@@ -1,3 +1,4 @@
+const moment = require('moment');
 const handler = (err, req, res, next) => {
     console.log('ERROR STACK ', err.stack)
 
@@ -9,7 +10,7 @@ const handler = (err, req, res, next) => {
             code: err.code,
             statusCode: err.statusCode,
             message: err.message,
-            timestamp: new Date().toISOString(),
+            timestamp: moment().format(),
             //stack: err.stack 
         })
         .end();
