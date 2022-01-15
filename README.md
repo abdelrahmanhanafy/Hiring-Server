@@ -34,7 +34,7 @@ package.json
 ```
 
 ## How to start the project
-- You need to provide .env file with the necessary credentials as it is in the .env file.
+- You need to provide .env file with the necessary credentials as it is in the .env.example file.
 - Also you need to add google crdentials.json file to the root of the project.
 - then you need to install packages using npm i 
 - you can start the project using npm run start script.
