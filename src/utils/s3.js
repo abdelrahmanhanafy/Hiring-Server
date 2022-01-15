@@ -1,8 +1,9 @@
 const AWS = require('aws-sdk');
+const config = require('../config/index')
 
 const s3 = new AWS.S3({
-    accessKeyId: "AKIA36M346PBXWNICQEB",
-    secretAccessKey: "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"
+    accessKeyId: config.props.ACCESSKEYID,
+    secretAccessKey: config.props.SECRETACCESSKEY
 });
 
 const upload = async (data) => {
