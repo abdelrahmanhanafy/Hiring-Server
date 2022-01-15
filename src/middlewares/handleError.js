@@ -1,6 +1,5 @@
 const moment = require('moment');
 const handler = (err, req, res, next) => {
-    console.log('ERROR STACK ', err.stack)
 
     err.statusCode = err.statusCode || 500;
     err.code = err.code || 'INTERNAL_SERVER_ERROR';
