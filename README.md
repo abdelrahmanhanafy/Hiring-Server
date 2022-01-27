@@ -16,10 +16,10 @@ I use aws EC2 to deploy the service, and aws S3 storage to upload incoming cvs.
 ```
 
 src
-	config
-	controllers
-	middlewares
-	services
+    config
+    controllers
+    middlewares
+    services
     utils
     validations
     app.js
